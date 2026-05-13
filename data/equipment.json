@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Measurement Workstation",
+    "category": "Instrumentation",
+    "description": "General-purpose workstation for acquisition, measurement control, and experimental data processing.",
+    "location": "Laboratory Room 2",
+    "capabilities": ["Data acquisition", "Signal measurement", "Automation"]
+  },
+  {
+    "name": "GPU Compute Server",
+    "category": "Computing",
+    "description": "Shared computational resource for model training, simulation, and batch processing.",
+    "location": "Server room",
+    "capabilities": ["GPU computing", "Simulation", "Machine learning"]
+  }
+]

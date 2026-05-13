@@ -1,0 +1,15 @@
+[
+  {
+    "title": "Prototype System for Real-Time Monitoring",
+    "area": "Monitoring systems",
+    "status": "Under development",
+    "student": "Student Name",
+    "summary": "This diploma thesis develops a prototype monitoring system with real-time data acquisition, visualization, and evaluation under representative operating conditions.",
+    "supervisor": {
+      "name": "Dr. Firstname Lastname",
+      "email": "name@example.edu",
+      "office": "Building A, Room 101"
+    },
+    "keywords": ["Monitoring", "Visualization", "Evaluation"]
+  }
+]

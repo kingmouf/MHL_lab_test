@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Dr. Firstname Lastname",
+    "role": "Lab Director / Associate Professor",
+    "email": "name@example.edu",
+    "phone": "+30 000 0000000",
+    "office": "Building A, Room 101",
+    "website": "https://example.edu",
+    "cv": "Short CV paragraph describing education, academic appointments, selected achievements, teaching activity, and research leadership.",
+    "researchInterests": ["Signal processing", "Embedded systems", "Machine learning"]
+  },
+  {
+    "name": "Firstname Lastname",
+    "role": "PhD Candidate",
+    "email": "student@example.edu",
+    "phone": "",
+    "office": "Building A, Lab 2",
+    "website": "",
+    "cv": "Short CV paragraph describing studies, current doctoral topic, technical skills, and project participation.",
+    "researchInterests": ["Computer vision", "Sensing", "Robotics"]
+  }
+]

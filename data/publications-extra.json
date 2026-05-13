@@ -1,0 +1,12 @@
+{
+  "lastname2026example": {
+    "pdf": "papers/lastname2026example.pdf",
+    "publisher": "https://doi.org/10.0000/example-doi",
+    "abstract": "Replace this text with the publication abstract. The bibliographic information displayed on the site is extracted from the matching BibTeX entry."
+  },
+  "lastname2025conference": {
+    "pdf": "papers/lastname2025conference.pdf",
+    "publisher": "https://doi.org/10.0000/example-conf-doi",
+    "abstract": "Replace this text with the conference paper abstract. Use the BibTeX key as the object key in this file."
+  }
+}

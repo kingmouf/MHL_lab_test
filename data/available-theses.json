@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Design and Evaluation of a Smart Sensing Platform",
+    "area": "Embedded systems",
+    "status": "Available",
+    "description": "The thesis will design, implement, and evaluate a prototype sensing platform for laboratory or field measurements. The work may include hardware integration, firmware development, data collection, and experimental validation.",
+    "supervisor": {
+      "name": "Dr. Firstname Lastname",
+      "email": "name@example.edu",
+      "office": "Building A, Room 101"
+    },
+    "keywords": ["Sensors", "Firmware", "Data acquisition"]
+  },
+  {
+    "title": "Machine Learning Methods for Experimental Data Analysis",
+    "area": "Machine learning",
+    "status": "Available",
+    "description": "The thesis will compare machine learning methods for data produced by laboratory experiments. The student will prepare datasets, build models, evaluate performance, and document reproducible workflows.",
+    "supervisor": {
+      "name": "Dr. Firstname Lastname",
+      "email": "name@example.edu",
+      "office": "Building A, Room 101"
+    },
+    "keywords": ["Python", "Data analysis", "Models"]
+  }
+]
