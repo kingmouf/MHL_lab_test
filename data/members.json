@@ -1,22 +1,120 @@
 [
   {
-    "name": "Dr. Firstname Lastname",
-    "role": "Lab Director / Associate Professor",
-    "email": "name@example.edu",
-    "phone": "+30 000 0000000",
-    "office": "Building A, Room 101",
-    "website": "https://example.edu",
-    "cv": "Short CV paragraph describing education, academic appointments, selected achievements, teaching activity, and research leadership.",
-    "researchInterests": ["Signal processing", "Embedded systems", "Machine learning"]
+    "category": "Lab Director",
+    "members": [
+      {
+        "name": "Prof. Sotiris Ioannidis",
+        "role": "Lab Director / Professor",
+        "email": "sioannidis@tuc.gr",
+        "office": "Ktirio Epistimon, Office 145A.xx",
+        "website": "https://users.ics.forth.gr/~sotiris/",
+        "cv": "short cv to be added",
+        "researchInterests": ["Security", "Systems", "Hardware", "Metasurfaces"]
+      }
+    ]
   },
   {
-    "name": "Firstname Lastname",
-    "role": "PhD Candidate",
-    "email": "student@example.edu",
-    "phone": "",
-    "office": "Building A, Lab 2",
-    "website": "",
-    "cv": "Short CV paragraph describing studies, current doctoral topic, technical skills, and project participation.",
-    "researchInterests": ["Computer vision", "Sensing", "Robotics"]
+    "category": "Collaborating Researchers",
+    "members": [
+      {
+        "name": "Dr. Konstantinos Georgopoulos",
+        "role": "Collaborating Researcher",
+        "email": "kgeorgopoulos@tuc.gr",
+        "cv": "short cv to be added",
+        "researchInterests": ["Hardware Design", "Security", "Reconfigurable Systems", "FPGA"]
+      },
+      {
+        "name": "Dr. Georgios Christou",
+        "role": "Collaborating Researcher",
+        "email": "gchristou@tuc.gr",
+        "cv": "short cv to be added",
+        "researchInterests": ["Computer Architecture", "Security", "RISC-V"]
+      },
+      {
+        "name": "Dr. Grigoris Chrysos",  
+        "role": "Collaborating Researcher",
+        "email": "gxrysos@tuc.gr",
+        "cv": "short cv to be added",
+        "researchInterests": ["Hardware Design", "Security", "Reconfigurable Systems", "FPGA", "Hardware Accelerators", "Network Accelerators", "HPC", "Embedded Systems"]
+      },
+      {
+        "name": "Dr. Dimitris Theodoropoulos",
+        "role": "Collaborating Researcher",
+        "email": "dtheodoropoulos@tuc.gr",
+        "cv": "short cv to be added",
+        "researchInterests": ["Hardware Design", "Reconfigurable Systems", "FPGA", "Embedded Systems"]
+      }
+    ]
+  },
+
+  {
+    "category": "PhD Candidates - Researchers",
+    "members": [
+      {
+        "name": "Andreas Brokalakis",
+        "role": "PhD Candidate - Researcher, Linux Administrator",
+        "email": "abrokalakis@tuc.gr",
+        "office": "Ktirio Epistimon, Office 145B.69",
+        "website": "http://www.abrokalakis.gr",
+        "cv": "MEng (integrated master) from the Computer Engineering and Informatics Dept, University of Patras, Greece. MSc at Intergrated Software / Hardware Systems, from the same Department / University. Currently working towards a PhD degree at the School of Electrical and Computer Engineering, Technical University of Crete, Greece. I have been working as a research associate for the Telecommunication Systems Institute, Technical University of Crete, engaged in multiple EU and Greek research projects, serving both a researcher/engineer and as project manager. In the past, I have also provided research and development services to Synelixis Solutions Ltd as a senior hardware engineer while currently I hold a similar position for Exascale Performance Systems Ltd. I serve as the Technical and Scientific Manager for the H2020 MEDIATE project and I am also the leader for the integration workpackage in the KDT JU REBECCA project. My expertise lies mostly in the development of reconfigurable systems, computer architecture and computer arithmetic. As part of my involvement in several related projects, I am also rapidly engaged in designing systems related to cybersecurity or systems that provide security mechanisms such as cryptographic systems, homomorphic encryption, zero knwoledge proofs, etc. Lastly, I am responsible for the administration of the server infrastructure of MHL lab.",
+        "researchInterests": ["Computer Architecture", "RISC-V", "simulation tools", "FPGA", "Computer Arithmetic", "Hardware Accelerators", "HPC", "Embedded Systems","Security", "Cryptography", "Side Channel Attacks"]
+      },
+      {
+        "name": "Katerina Tsimpirdoni",
+        "role": "PhD Candidate - Researcher",
+        "email": "atsimpirdoni@tuc.gr",
+        "office": "Ktirio Epistimon, Office 145B.69",
+        "website": "",
+        "cv": "short cv to be added here",
+        "researchInterests": ["Computer Architecture", "RISC-V", "FPGA", "Security"]
+      },
+      {
+        "name": "Kosmas Spyridakis",
+        "role": "PhD Candidate - Researcher",
+        "email": "kspyridakis1@tuc.gr",
+        "office": "Ktirio Epistimon, Office 145B.69",
+        "website": "",
+        "cv": "short cv to be added here",
+        "researchInterests": ["Computer Architecture", "RISC-V", "Security"]
+      }
+    ]
+  },
+  {
+    "category": "Master Students",
+    "members": [
+      {
+        "name": "Konstantinos Amplianitis",
+        "email": "kamplianitis@tuc.gr",
+        "office": "Ktirio Epistimon, Office 145B.69",
+        "website": "https://kamplianitis.github.io/",
+        "cv": "Master Thesis Title: Hardware-assisted fault isolation (HFI) on RISC-V Processors",
+        "researchInterests": ["Computer Architecture", "RISC-V", "Security"]
+      }  
+    ]
+  },
+  {
+    "category": "Students Currently Working on a Diploma Thesis",
+    "members": [
+      {
+        "name": "Nikos Pnevmatikatos",
+        "email": "npnevmatikatos@tuc.gr",
+        "website": "",
+        "cv": "Diploma Thesis Title: TBD",
+        "researchInterests": ["Computer Architecture", "RISC-V", "Security"]
+      }
+    ]
+  },
+  {
+    "category": "External Associates",
+    "members": [
+      {
+        "name": "Ioannis Morianos",
+        "email": "imorianos@tuc.gr",
+        "office": "Ktirio Epistimon, Office 145B.69",
+        "website": "",
+        "cv": "short cv to be added",
+        "researchInterests": ["Reconfigurable Systems", "Security", "Side Channel Attacks", "Hardware Accelerators"]
+      } 
+    ]
   }
 ]

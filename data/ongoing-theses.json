@@ -1,15 +1,26 @@
 [
   {
-    "title": "Prototype System for Real-Time Monitoring",
-    "area": "Monitoring systems",
+    "title": "Optimization of a Hardware-Accelerated Version of the OpenFHE Library",
+    "area": "Hardware Accelerated Computations, Fully Homomorphic Encryption",
     "status": "Under development",
-    "student": "Student Name",
-    "summary": "This diploma thesis develops a prototype monitoring system with real-time data acquisition, visualization, and evaluation under representative operating conditions.",
+    "student": "Nikos Pnevmatikatos",
+    "summary": "This thesis extends previous work carried out in the MHL lab that produced a hardware accelerated version of the OpenFHE library. The first version of the hardware accelerated OpenFHE library focused on providing complete compatibility with the OpenFHE framework and establish the mechanisms that can effectively use an FPGA accelerator PCIe card in order to offload a series of computations to a custom hardware component instead of the main CPU. In that process, a number of potential improvements were identified that can potentially elevate the performance of the initial implementation. The current thesis will explore those identified open issues and will work towards resolving them or improving the way they function. The goal is to achieve the maximum potential of the underlying hardware accelerator infrastructure without loosing the compatibility and stability of the previous implementation.",
     "supervisor": {
-      "name": "Dr. Firstname Lastname",
-      "email": "name@example.edu",
-      "office": "Building A, Room 101"
+      "name": "Mr. Andreas Brokalakis",
+      "email": "abrokalakis@tuc.gr"
     },
-    "keywords": ["Monitoring", "Visualization", "Evaluation"]
+    "keywords": ["Hardware Acceleration", "OpenFHE", "FPGA", "OpenCL", "Fully Homomorphic Encryption"]
+  },
+  {
+    "title": "Side Channel Attacks on Reconfigurable Hardware Modules",
+    "area": "Side Channel Attacks, Reconfigurable Hardware, Security",
+    "status": "Under development",
+    "student": "tbd",
+    "summary": "Multi-tenant FPGA deployment can significantly increase device utilization and improve the economics of providing reconfigurable computing infrastructure in data centers and the cloud. Although technically feasible, the effort is hindered by the fact that co-located designs are exposed to remote power side-channel attacks through the shared power distribution network (PDN). Previous works have shown that a malicious tenant can deploy on-chip voltage sensors and recover secret-dependent information from neighboring modules without requiring physical access to the board. Security mechanisms have already been proposed, but they are typically associated with increased design effort and hardware modules that consume significantly larger resources while increasing dramatically the power consumption at the device and board level. Especially the power issues have often been the case that service providers prohibit the use of certain defense mechanisms to protect their equipment. Besides sharing an FPGA among different users, the same issues arise when designs integrate different components from a number of sources (first and third party IP providers, open source repositories). The whole problem transforms in this case to supply chain problem, where the distribution of components may not expose all their properties to the end user (e.g. a module is received in an encrypted form to protect the relevant IP) or their sheer complexity may prohibit a user to thoroughly examine all potential properties of a third party design. This thesis builds upon previous works in the MHL lab that focused on providing defense mechanisms in such cases. A result from previous works is that potentially the use of multiple components in a design can lead to at least a partial protection of a critical component (security of the herd). In this work, the goal is to further examine those initial findings and provide a systematic guide on the properties of the herd that can lead to acceptable levels of security or at least quantify the limitations of such an approach.",
+    "supervisor": {
+      "name": "Mr. Ioannis Morianos, Mr. Andreas Brokalakis",
+      "email": "imorianos@tuc.gr"
+    },
+    "keywords": ["Side Channel Attacks", "Multitenacny", "Supply Chain Attacks", "FPGA"]
   }
 ]

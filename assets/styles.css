@@ -223,6 +223,34 @@ h3 {
   gap: 1rem;
 }
 
+.member-sections {
+  display: grid;
+  gap: clamp(1.75rem, 4vw, 3rem);
+}
+
+.member-group {
+  display: grid;
+  gap: 1rem;
+}
+
+.member-group-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.member-group-heading h2 {
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+}
+
+.member-group-heading span {
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
 .stat-grid article,
 .card,
 .thesis,
@@ -383,6 +411,11 @@ h3 {
   .stat-grid,
   .card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .member-group-heading {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .hero {

@@ -1,26 +1,101 @@
 [
   {
-    "title": "Design and Evaluation of a Smart Sensing Platform",
-    "area": "Embedded systems",
+    "title": "Design and implementation of an FPGA-based IPS on top of the existing IDS architecture",
+    "area": "Reconfigurable Accelerators, Network Security, Intrusion Detection/Prevention Systems",
     "status": "Available",
-    "description": "The thesis will design, implement, and evaluate a prototype sensing platform for laboratory or field measurements. The work may include hardware integration, firmware development, data collection, and experimental validation.",
+    "description": "This thesis aims to extend the existing FPGA-based Snort IDS implementation by integrating Intrusion Prevention System (IPS) capabilities. The system will be enhanced to operate inline, enabling real-time packet filtering, flow blocking, and threat mitigation based on detected rules. Emphasis is placed on low-latency hardware processing, decision mechanisms for packet handling, and seamless integration with the current IDS architecture to provide a complete FPGA-based network security solution.",
     "supervisor": {
-      "name": "Dr. Firstname Lastname",
-      "email": "name@example.edu",
-      "office": "Building A, Room 101"
+      "name": "Dr. Gregory Chrysos",
+      "email": "gxrysos@tuc.gr"
     },
-    "keywords": ["Sensors", "Firmware", "Data acquisition"]
+    "keywords": ["FPGA", "Security", "IDS", "IPS"]
   },
   {
-    "title": "Machine Learning Methods for Experimental Data Analysis",
-    "area": "Machine learning",
+    "title": "Partial reconfiguration for adaptive IDS/IPS based on traffic profile and zero-day attacks",
+    "area": "Reconfigurable Accelerators, Network Security, Intrusion Detection/Prevention Systems",
     "status": "Available",
-    "description": "The thesis will compare machine learning methods for data produced by laboratory experiments. The student will prepare datasets, build models, evaluate performance, and document reproducible workflows.",
+    "description": "This topic explores the use of FPGA partial reconfiguration to create an adaptive IDS/IPS system that can modify its detection logic at runtime according to observed traffic patterns and emerging threats. The system dynamically loads different rule sets or detection modules without interrupting operation, enabling rapid response to zero-day attacks and changing network conditions. The work highlights runtime adaptability, hardware modularity, and efficient reconfiguration strategies for continuous network protection.",
     "supervisor": {
-      "name": "Dr. Firstname Lastname",
-      "email": "name@example.edu",
-      "office": "Building A, Room 101"
+      "name": "Dr. Gregory Chrysos",
+      "email": "gxrysos@tuc.gr"
     },
-    "keywords": ["Python", "Data analysis", "Models"]
+    "keywords": ["FPGA", "Partial Reconfiguration", "Security", "IDS", "IPS"]
+  },
+  {
+    "title": "FPGA implementation of encrypted traffic fingerprinting",
+    "area": "Reconfigurable Accelerators, Network Security",
+    "status": "Available",
+    "description": "This thesis focuses on the design and implementation of an FPGA-based module capable of performing encrypted traffic fingerprinting without decrypting the payload. By analyzing flow-level characteristics, packet timing, sizes, and protocol metadata, the system can classify and identify suspicious encrypted communications in real time. The work emphasizes high-throughput hardware parsing, feature extraction, and pattern recognition suitable for TLS/SSL traffic, enabling effective intrusion detection in modern networks where encryption is dominant.",
+    "supervisor": {
+      "name": "Dr. Gregory Chrysos",
+      "email": "gxrysos@tuc.gr"
+    },
+    "keywords": ["FPGA", "Security", "Fingerprinting", "Traffic Analysis"]
+  },
+  {
+    "title": "FPGA implementation of encrypted traffic fingerprinting",
+    "area": "Reconfigurable Accelerators, Network Security",
+    "status": "Available",
+    "description": "This thesis focuses on the design and implementation of an FPGA-based module capable of performing encrypted traffic fingerprinting without decrypting the payload. By analyzing flow-level characteristics, packet timing, sizes, and protocol metadata, the system can classify and identify suspicious encrypted communications in real time. The work emphasizes high-throughput hardware parsing, feature extraction, and pattern recognition suitable for TLS/SSL traffic, enabling effective intrusion detection in modern networks where encryption is dominant.",
+    "supervisor": {
+      "name": "Dr. Gregory Chrysos",
+      "email": "gxrysos@tuc.gr"
+    },
+    "keywords": ["FPGA", "Security", "Fingerprinting", "Traffic Analysis"]
+  },
+  {
+    "title": "FPGA-Accelerated ML-Based IDS for Real-Time Threat Detection",
+    "area": "Reconfigurable Accelerators, Network Security, Machine Learning",
+    "status": "Available",
+    "description": "This thesis investigates the design and implementation of an FPGA-accelerated machine learning–based Intrusion Detection System (IDS) for real-time threat detection. The proposed system performs both network traffic feature extraction and ML model inference directly in hardware, enabling high-throughput and low-latency operation. Emphasis is placed on efficient hardware pipelines for feature computation and on implementing the ML model using fixed-point arithmetic to optimize FPGA resource utilization. The performance of the FPGA-based solution will be evaluated and compared against software-based ML IDS approaches in terms of latency, throughput, and detection accuracy.",
+    "supervisor": {
+      "name": "Dr. Gregory Chrysos",
+      "email": "gxrysos@tuc.gr"
+    },
+    "keywords": ["FPGA", "Security", "Machine Learning", "IDS", "Threat Detection"]
+  },
+  {
+    "title": "Online Feature Extraction and ML Training on FPGA",
+    "area": "Reconfigurable Accelerators, Network Security, Machine Learning, Training",
+    "status": "Available",
+    "description": "This thesis explores the implementation of real-time network traffic feature extraction on FPGA and the investigation of methods for incremental or online training of machine learning models for adaptive intrusion detection. The FPGA is responsible for efficiently computing flow-based features such as packet sizes, timing characteristics, and protocol metadata, which are then provided to a training engine, potentially co-processed on a CPU. The work also examines the feasibility of using partial FPGA reconfiguration to update ML models or feature extraction modules at runtime without interrupting system operation, enabling a continuously evolving ML-based IDS.",
+    "supervisor": {
+      "name": "Dr. Gregory Chrysos",
+      "email": "gxrysos@tuc.gr"
+    },
+    "keywords": ["FPGA", "Security", "Machine Learning", "IDS", "Training"]
+  },
+  {
+    "title": "FPGA Acceleration of Graph Neural Networks for Large-Scale Graph Mining and Analytics",
+    "area": "Reconfigurable Accelerators, GNNs",
+    "status": "Available",
+    "description": "This thesis investigates the design and implementation of an FPGA-based hardware accelerator for Graph Neural Networks (GNNs) targeting large-scale graph mining and analytics tasks. In this approach, the AI model itself performs the graph mining by learning structural patterns, node relationships, and hidden graph features through message passing and neighborhood aggregation. The FPGA is used to accelerate the most computationally and memory-intensive parts of GNN inference, including feature updates, using highly parallel and streaming architectures. The proposed system demonstrates how FPGA acceleration can significantly enhance the performance and energy efficiency of AI-driven graph analytics compared to conventional CPU/GPU implementations.",
+    "supervisor": {
+      "name": "Dr. Gregory Chrysos",
+      "email": "gxrysos@tuc.gr"
+    },
+    "keywords": ["FPGA", "Security", "Machine Learning", "GNN", "Analytics", "AI"]
+  },
+  {
+    "title": "Concurrent Abstract Data Types (ADTs) for Multiway Stream Aggregation on FPGA",
+    "area": "Reconfigurable Accelerators, ADTs, Data Structures",
+    "status": "Available",
+    "description": "This thesis investigates the design and implementation of an FPGA-based hardware accelerator for Graph Neural Networks (GNNs) targeting large-scale graph mining and analytics tasks. In this approach, the AI model itself performs the graph mining by learning structural patterns, node relationships, and hidden graph features through message passing and neighborhood aggregation. The FPGA is used to accelerate the most computationally and memory-intensive parts of GNN inference, including feature updates, using highly parallel and streaming architectures. The proposed system demonstrates how FPGA acceleration can significantly enhance the performance and energy efficiency of AI-driven graph analytics compared to conventional CPU/GPU implementations.",
+    "supervisor": {
+      "name": "Dr. Gregory Chrysos",
+      "email": "gxrysos@tuc.gr"
+    },
+    "keywords": ["FPGA", "Stream-based Data Types", "Parallelism", "Analytics"]
+  },
+  {
+    "title": "Evaluation of FPGA Side-Channel Attacks Using the ChipWhisperer Platform",
+    "area": "Side Channel Attacks, Hardware, Cryptography",
+    "status": "Available",
+    "description": "This thesis investigates the implementation of side-channel attacks (SCAs) on FPGA-based cryptographic modules using the ChipWhisperer Platform. The approach exploits physical leakages, such as power consumption, to recover secret information from hardware implementations of algorithms like AES. The experimental setup includes deploying a cryptographic core on an FPGA and capturing power traces with ChipWhisperer. The study applies techniques such as Correlation Power Analysis (CPA) to extract secret keys by analyzing the relationship between processed data and measured signals. The work also compares these external measurement attacks with internal FPGA-based SCAs using Time-to-Digital Converter (TDC) sensors to capture on-chip leakage, evaluating their effectiveness and limitations. Finally, the thesis explores and maps possible mitigation techniques, such as masking and hiding, assessing their impact on security and performance.",
+    "supervisor": {
+      "name": "Mr. Ioannis Morianos",
+      "email": "imorianos@tuc.gr"
+    },
+    "keywords": ["FPGA", "SCA", "Attacks", "Security"]
   }
 ]

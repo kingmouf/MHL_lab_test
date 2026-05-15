@@ -65,8 +65,31 @@ function renderTags(items = []) {
 async function renderMembers() {
   const target = document.querySelector("#members-list");
   try {
-    const members = await fetchJson("data/members.json");
-    target.innerHTML = members.map((member) => `
+    const data = await fetchJson("data/members.json");
+    const groups = Array.isArray(data) && data[0] && data[0].members
+      ? data
+      : [{ category: "Lab Members", members: data }];
+
+    target.innerHTML = groups.map((group) => `
+      <section class="member-group">
+        <div class="member-group-heading">
+          <h2>${escapeHtml(group.category)}</h2>
+          <span>${escapeHtml(group.members.length)} ${group.members.length === 1 ? "member" : "members"}</span>
+        </div>
+        ${group.members.length ? `
+          <div class="card-grid">
+            ${group.members.map(renderMemberCard).join("")}
+          </div>
+        ` : `<p class="notice">No members listed yet.</p>`}
+      </section>
+    `).join("");
+  } catch (error) {
+    target.innerHTML = `<p class="notice">${escapeHtml(error.message)}</p>`;
+  }
+}
+
+function renderMemberCard(member) {
+  return `
       <article class="card">
         <h2>${escapeHtml(member.name)}</h2>
         <p class="role">${escapeHtml(member.role)}</p>
@@ -79,10 +102,7 @@ async function renderMembers() {
         <p>${escapeHtml(member.cv)}</p>
         ${renderTags(member.researchInterests)}
       </article>
-    `).join("");
-  } catch (error) {
-    target.innerHTML = `<p class="notice">${escapeHtml(error.message)}</p>`;
-  }
+    `;
 }
 
 async function renderTheses(targetId, path, includeStudent) {
