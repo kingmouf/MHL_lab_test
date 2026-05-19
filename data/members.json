@@ -41,8 +41,8 @@
         "name": "Dr. Dimitris Theodoropoulos",
         "role": "Collaborating Researcher",
         "email": "dtheodoropoulos@tuc.gr",
-        "cv": "short cv to be added",
-        "researchInterests": ["Hardware Design", "Reconfigurable Systems", "FPGA", "Embedded Systems"]
+        "cv": "Dr. Dimitris Theodoropoulos (male) is a senior researcher at the Institute of Communication and Computation Systems (ICCS) of the National Technical University of Athens, and the Microprocessor Hardware Laboratory (MHL) of the Technical University of Crete. In 2003 and 2005 he obtained his Diploma (5-year degree) and M.Sc degree respectively from the Electronic and Computer Engineering department at the Technical University of Crete, Greece. In 2007, he joined the Computer Engineering department of the Delft University of Technology, the Netherlands, and in 2011 he was awarded his Ph.D. Between 2011-2019, he collaborated with the Telecommunication Systems Research Institute at the Technical University of Crete, Greece, and the Computer Architecture and VLSI Systems group at the Foundation for Research and Technology – Hellas (FORTH) in Crete, Greece. Dimitris Theodoropoulos has been involved at technical and coordination level in the following European research and management projects: OPTIMA (#955739), EUROCC (#951732), EUROCC2 (#101101903) EuroHPC JU, EDRA (#851631) H2020 FET Innovation Launchpad, two Tetramax-funded projects (#761349), dReDBox H2020 project (#687632), AXIOM H2020 project (#645496), DeSyRe FP7 project (#287611). He has also coordinated the following nationally (in Greece) founded projects: Eleon (#02637) and mCluster (#1592) supported by the National Strategic Reference Framework (NSRF) 2014-2020. His current research interests include embedded systems, reconfigurable computing, computer architecture, and IoT / cloud computing.",
+        "researchInterests": ["Hardware Design", "Reconfigurable Systems", "FPGA", "Embedded Systems", "Internet of Things", "Cloud Computing"]
       }
     ]
   },
