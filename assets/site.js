@@ -132,19 +132,49 @@ async function renderTheses(targetId, path, includeStudent) {
 async function renderEquipment() {
   const target = document.querySelector("#equipment-list");
   try {
-    const equipment = await fetchJson("data/equipment.json");
-    target.innerHTML = equipment.map((item) => `
-      <article class="card">
-        <h2>${escapeHtml(item.name)}</h2>
-        <p class="role">${escapeHtml(item.category)}</p>
-        <p>${escapeHtml(item.description)}</p>
-        ${item.location ? `<p class="meta"><strong>Location:</strong> ${escapeHtml(item.location)}</p>` : ""}
-        ${renderTags(item.capabilities)}
-      </article>
+    const data = await fetchJson("data/equipment.json");
+    const groups = Array.isArray(data) && data[0] && data[0].items
+      ? data
+      : [{ category: "Available Equipment", items: data }];
+
+    target.innerHTML = groups.map((group) => `
+      <section class="content-group equipment-group">
+        <div class="content-group-heading">
+          <h2>${escapeHtml(group.category)}</h2>
+          <span>${escapeHtml(group.items.length)} ${group.items.length === 1 ? "item" : "items"}</span>
+        </div>
+        ${group.items.length ? `
+          <div class="card-grid">
+            ${group.items.map(renderEquipmentCard).join("")}
+          </div>
+        ` : `<p class="notice">No equipment listed yet.</p>`}
+      </section>
     `).join("");
   } catch (error) {
     target.innerHTML = `<p class="notice">${escapeHtml(error.message)}</p>`;
   }
+}
+
+function renderEquipmentCard(item) {
+  const features = item.features || item.capabilities || [];
+  return `
+      <article class="card">
+        <h2>${escapeHtml(item.name)}</h2>
+        <p class="role">${escapeHtml(item.type || item.category)}</p>
+        <p>${escapeHtml(item.description)}</p>
+        ${item.location ? `<p class="meta"><strong>Location:</strong> ${escapeHtml(item.location)}</p>` : ""}
+        ${renderFeatures(features)}
+      </article>
+    `;
+}
+
+function renderFeatures(features = []) {
+  if (!features.length) return "";
+  return `
+    <ul class="feature-list">
+      ${features.map((feature) => `<li>${escapeHtml(feature)}</li>`).join("")}
+    </ul>
+  `;
 }
 
 async function renderPublications() {

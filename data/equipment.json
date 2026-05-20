@@ -1,16 +1,245 @@
 [
   {
-    "name": "Measurement Workstation",
-    "category": "Instrumentation",
-    "description": "General-purpose workstation for acquisition, measurement control, and experimental data processing.",
-    "location": "Laboratory Room 2",
-    "capabilities": ["Data acquisition", "Signal measurement", "Automation"]
+    "category": "Data Center Infrastructure",
+    "items": [
+      {
+        "name": "kronos.mhl.tuc.gr (Dell PowerEdge R530)",
+        "type": "Application Server, FPGA Deployment Server",
+        "description": "General-purpose application server mostly dedicated to FPGA/ASIC design and deployment of FPGA accelerated applications.",
+        "location": "TUC Data Center",
+        "features": [
+          "CPU: 2x Intel Xeon E5-2630v4 (10 cores, 2.2 GHz)",
+          "Memory: 256 GB DDR4 ECC RAM",
+          "Add-in cards: Xilinx Alveo U50C FPGA accelerator",
+          "Storage: 2x 480GB SATA SSD (RAID 1 - OS/Applications), 2x 4TB HDD (Non-RAID / User Data), 1x 1TB SATA SSD (Applications)",
+          "Software: CentOS 7, Xilinx license server, 2018.3, 2020.1, 2022.1, Xilinx FPGA design tools (Vitis, Vivado), PetaLinux, xrt, gcc, OpenCL, Python, riscvtools"
+        ]
+      },
+      {
+        "name": "zeus.mhl.tuc.gr (Dell PowerEdge R520)",
+        "type": "Application Server - under maintenance/repurposing",
+        "description": "General-purpose application server mostly dedicated to hosting FPGA design tools (dedicated to undergrads).",
+        "location": "TUC Data Center",
+        "features": [
+          "CPU: 2x IIntel Xeon E5-2430v2 (6 cores, 2.5 GHz)",
+          "Memory: 96 GB DDR3 ECC RAM",
+          "Storage: 1x 250GB SATA SSD (OS/Applications), 1x 1TB HDD (User Data), 1x 500GB HDD (User Data), 1x 500TB SATA SSD (Applications)",
+          "Software: CentOS 7, 2019.1, 2020.2, 2022.1, Xilinx FPGA design tools (Vitis, Vivado), PetaLinux, xrt, gcc, OpenCL,Python, riscvtools"
+        ]
+      },
+      {
+        "name": "r2d2.mhl.tuc.gr (Dell PowerEdge R7525)",
+        "type": "Application Server, FPGA Deployment Server -- CURRENTLY DEDICATED TO HOSTING H2020 MEDIATE PROJECT INFRASTRUCTURE",
+        "description": "General-purpose application server. Currently dedicated to the H2020 MEDIATE project hosting the secure Virtual Machines for the Overwatch and Orchestrator components. The server has been configured so that secure VMs can be deployed using the AMD SEV, SEV-ES and SEV-SNP technologies. ",
+        "location": "TUC Data Center",
+        "features": [
+          "CPU: 2x AMD EPYC 7413 (24 cores, 2.65 GHz)",
+          "Memory: 512 GB DDR4 ECC RAM",
+          "Add-in cards: Xilinx Alveo U200 FPGA accelerator",
+          "Storage: 2x 480GB SATA SSD (RAID 0 - OS/Applications), 1x 1.5TB NVMe SSD (User Data)",
+          "Software: RedHat 9.7, Xilinx license server "
+        ]
+      },
+      {
+        "name": "c3pO.mhl.tuc.gr (Dell PowerEdge R7525)",
+        "type": "GPU Computing Server",
+        "description": "General-purpose application server mostly dedicated to the development and deployment of GPU accelerated applications.",
+        "location": "TUC Data Center",
+        "features": [
+          "CPU: 2x AMD EPYC 7543 (32 cores, 2.8 GHz)",
+          "Memory: 512 GB DDR4 ECC RAM",
+          "Add-in cards: NVIDIA A100 GPU accelerator, NVIDIA A30 GPU accelerator",
+          "Storage: 2x 480GB SATA SSD (RAID 0 - OS/Applications), 1x 1.5TB NVMe SSD (User Data)",
+          "Software: RedHat 9.1, software stack for NVIDIA A100 and A30 (CUDA, cuDNN, TensorRT, etc.)"
+        ]
+      },
+      {
+        "name": "bb8.mhl.tuc.gr (Lenovo ThinkSystem SR675 V3)",
+        "type": "GPU Computing Server dedicated to AI Application Development and AI Training",
+        "description": "GPU-accelerated AI application server dedicated to design and deployment of AI applications and AI training of novel models",
+        "location": "TUC Data Center",
+        "features": [
+          "CPU: 2x AMD EPYC 9555 (64 cores, 2.2 GHz)",
+          "Memory: 1 TB DDR5 (6400) ECC RAM",
+          "Add-in cards: 4x NVIDIA H200NVL GPU accelerators connected through NVLink, 1x Intel X710-T2L 10GBASE-T 2-port OCP Ethernet Adapter",
+          "Storage: 1x 1.92TB NVMe SSD (OS/Applications), 1x 15.36TB NVMe SSD (User Data)",
+          "Software: RedHat 9.6, NVIDIA software stack for H200NVL (CUDA, cuDNN, TensorRT, etc.), AI frameworks (PyTorch, TensorFlow, etc.)"
+        ]
+      },
+      {
+        "name": "kition.mhl.tuc.gr (Dell PowerEdge R620 - Dell PpowerVault MD3620i Storage Array)",
+        "type": "Storage Server",
+        "description": "Storage Server, hosting the SeaFile infrastructure and the lab's self hosted GitLab. - TO BE UPDATED / REPURPOSED",
+        "location": "TUC Data Center",
+        "features": [
+          "CPU: 2x Intel Xeon E5-2620v2 (6 cores, 2.1 GHz)",
+          "Memory: 24 GB DDR3 ECC RAM",
+          "Storage: 14x 900GB SAS HDD (RAID6 - 4 disks redundancy)",
+          "Software: RedHat, SeaFile, GitLab"
+        ]
+      }
+    ]
   },
   {
-    "name": "GPU Compute Server",
-    "category": "Computing",
-    "description": "Shared computational resource for model training, simulation, and batch processing.",
-    "location": "Server room",
-    "capabilities": ["GPU computing", "Simulation", "Machine learning"]
+    "category": "Computing Infrastructure",
+    "items": [
+      {
+        "name": "storm.mhl.tuc.gr",
+        "type": "ASIC Design Application Server",
+        "description": "Server Dedicated to ASIC Design hosting Synopsys and Cadence CAD tools.",
+        "location": "145.B69",
+        "features": [
+          "CPU: AMD Treadripper 5970X (32 cores, 3.0 GHz)",
+          "Memory: 256 GB ECC RAM"
+        ]
+      },
+      {
+        "name": "Synology NAS Server",
+        "type": "User Storage Server",
+        "description": "Network Attached Server available to storage/backup requirement of MHL users",
+        "location": "145.B69"
+      },
+      {
+        "name": "Compute Workstations",
+        "type": "General Purpose Computing",
+        "description": "A number of local workstations are available in the lab for general purpose computing and development. These workstations are mostly used for software development, hardware design and simulation, and other related tasks.",
+        "location": "145.B69, 145.B79, 145.B80"
+      },
+      {
+        "name": "Network Printers",
+        "type": "BW and Color Network Printers",
+        "description": "Two network printers (one with document scanning capabilities) are available for the printing needs of the MHL hardware group.",
+        "location": "145.B69, 145.B80"
+      },
+      {
+        "name": "FPGA dev. boards Gateway",
+        "type": "Gateway Server for FPGA Development Boards",
+        "description": "The server allows remote connection to FPGA development boards, enabling remote configuration and communication (UART) with the connected boards.",
+        "location": "145.B69"
+      }
+
+    ]
+  },
+  {
+    "category": "FPGA and Hardware Development Boards",
+    "items": [
+      {
+      "name": "Xilinx Alveo U200 FPGA Accelerator Card",
+      "type": "PCIe Accelerator Card",
+      "description": "Installed on an MHL workstation PC. Available for use under certain restrictions. More information: https://www.xilinx.com/products/boards-and-kits/alveo/u200.html",
+      "location": "145.B80"
+    },
+    {
+      "name": "Xilinx ZCU102 Evaluation Kit",
+      "type": "Xilinx Zynq UltraScale MPSoC Development Board",
+      "description": "Two (2) Xilinx ZCU102 evaluation kits are available for development and testing of FPGA-based designs. The ZCU102 features a Xilinx Zynq UltraScale+ MPSoC, which combines a powerful FPGA fabric with an ARM-based processing system, making it suitable for a wide range of applications including embedded systems, hardware acceleration, and prototyping. More information: https://www.xilinx.com/products/boards-and-kits/zcu102.html",
+      "location": "145.B69"
+    },
+    {
+      "name": "Xilinx ZCU104 Evaluation Kit",
+      "type": "Xilinx Zynq UltraScale MPSoC Development Board",
+      "description": "One Xilinx ZCU104 evaluation kit is available for development and testing of FPGA-based designs. The ZCU104 features a Xilinx Zynq UltraScale+ MPSoC, which combines a powerful FPGA fabric with an ARM-based processing system, making it suitable for a wide range of applications including embedded systems, hardware acceleration, and prototyping. More information: https://www.xilinx.com/products/boards-and-kits/zcu104.html",
+      "location": "145.B69"
+    },
+    {
+      "name": "Xilinx VC707 Evaluation Kit",
+      "type": "Xilinx Virtex7 Development Board",
+      "description": "Xilinx VC707 evaluation kit is available for development and testing of FPGA-based designs. The VC707 features a Xilinx Virtex7 FPGA and it is currently used for the development of RISC-V based systems and other reconfigurable accelerators. More information: https://www.xilinx.com/products/boards-and-kits/vc707.html",
+      "location": "145.B69"
+    },
+    {
+      "name": "Xilinx KC705 Evaluation Kit",
+      "type": "Xilinx Kintex7 Development Board",
+      "description": "Xilinx KC705 evaluation kit is available for development and testing of FPGA-based designs. The KC705 features a Xilinx Kintex7 FPGA. More information: https://www.xilinx.com/products/boards-and-kits/kc705.html",
+      "location": "145.B69"
+    },
+    {
+      "name": "Digilent Genesys2 Development Board",
+      "type": "Xilinx Kintex7 Development Board",
+      "description": "Digilent Genesys2 development board is available for development and testing of FPGA-based designs. The Genesys2 board features a Xilinx Kintex7 FPGA and it is primarily used to test and validate RISC-V designs, especially related to the OpenHWGroup CVA6 RISC-V core. More information: https://digilent.com/shop/genesys-2-amd-kintex-7-fpga-development-board/",
+      "location": "145.B69"
+    },
+    {
+      "name": "PYNQ Z1 and PYNQ Z2 Development Boards",
+      "type": "Xilinx Zynq Development Boards",
+      "description": "PYNQ Z1 and PYNQ Z2 development board are available for development and testing of FPGA-based designs. The boards can be used with the PYNQ project from AMD to facilitate the use of Adapptive Computing platforms. More information: https://www.pynq.io/ ",
+      "location": "145.B69, 145.B80"
+    },
+    {
+      "name": "Digilent ZedBoard Development Boards",
+      "type": "Xilinx Zynq Development Boards",
+      "description": "Several Zedboard development boards are available for development and testing of FPGA-based designs. The boards feature the Xilinx Zynq Z7020 MPSoC. More information: https://digilent.com/shop/zedboard-zynq-7000-arm-fpga-soc-development-board/",
+      "location": "145.B69, MHL lab"
+    },
+    {
+      "name": "Xilinx Development Boards",
+      "type": "Deprecated Xilinx Development Boards",
+      "description": "Several older Xilinx development boards featuring Zynq MPSOCs, Virtex6, Spartan6 and Virtex5 are available. These can be used under specific conditions using older version of the Xilinx tools. Additionally, a large number of smaller FPGA and CPLD boards are used for educational activities in the MHL lab serving the purposes of undergrad courses.",
+      "location": "145.B69, MHL lab"
+    }
+    ]
+  },
+  {
+    "category": "Security and Side-Channel Analysis Equipment",
+    "items": [
+      {
+      "name": "ChipWhisperer CW305 and CW1173",
+      "type": "Side-Channel Analysis Platform",   
+      "description": "ChipWhisperer is an open-source platform for side-channel analysis and fault injection. The CW305 is a versatile board that can be used for power analysis, electromagnetic analysis, and fault injection attacks. The CW1173 is a high-precision oscilloscope that can be used in conjunction with the CW305 for capturing and analyzing side-channel signals. More information: https://www.newae.com/tools/chipwhisperer/ ",
+      "location": "145.B69"
+    }
+  ]
+  },
+  {
+    "category": "Single Board Computers and Embedded Systems",
+    "items": [
+      {
+      "name": "NVIDIA Jetson Xavier NX Developer Kit",
+      "type": "Single Board Computer for AI and Embedded Systems Development",   
+      "description": "The NVIDIA Jetson Xavier NX Developer Kit is a powerful single-board computer designed for AI and embedded systems development. It features a 6-core NVIDIA Carmel ARMv8.2 64-bit CPU, a 384-core NVIDIA Volta GPU with 48 Tensor Cores, and 8GB of LPDDR4x RAM. The board is ideal for developing and deploying AI applications at the edge, including computer vision, robotics, and IoT applications. More information: https://developer.nvidia.com/embedded/jetson-xavier-nx-developer-kit",
+      "location": "145.B69"
+    },
+    {
+      "name": "Raspberry Pi 4 Model B",
+      "type": "Single Board Computer for General Purpose Development",   
+      "description": "The Raspberry Pi 4 Model B is a popular single-board computer that can be used for a wide range of general-purpose development tasks. It features a quad-core ARM Cortex-A72 CPU, up to 8GB of RAM, and various connectivity options. The Raspberry Pi is widely used for educational purposes, prototyping, and hobbyist projects. More information: https://www.raspberrypi.com/products/raspberry-pi-4-model-b/ ",
+      "location": "145.B69"
+    },
+    {
+      "name": "Intel NUC Performance Mini PC",
+      "type": "Single Board Computer for Embedded Systems Development",   
+      "description": "The Intel NUC Performance Mini PC is a compact and powerful single-board computer designed for embedded systems development. It features an Intel Core i7 processor, up to 64GB of RAM, and various connectivity options. The NUC is suitable for a wide range of applications, including edge computing, digital signage, and IoT development. More information: https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html. In the lab it si mostly used for embedded applications that require SGX support.",
+      "location": "145.B69"
+    },
+    {
+      "name": "NVIDIA Jetson AGX Orin Developer Kit",
+      "type": "High-performance Single Board Computer for AI and Embedded Systems Development",   
+      "description": "The NVIDIA Jetson AGX Orin Developer Kit is a high-performance single-board computer designed for AI and embedded systems development. It features a 12-core NVIDIA Carmel ARMv8.2 64-bit CPU, a 2048-core NVIDIA Ampere GPU with 64 Tensor Cores, and up to 32GB of LPDDR5 RAM. The board is ideal for developing and deploying AI applications at the edge, including autonomous machines, robotics, and smart cities applications. More information: https://developer.nvidia.com/embedded/jetson-agx-orin-developer-kit",
+      "location": "145.B69"
+     }
+  ]
+  },
+  {
+    "category": "Software and CAD Tools",
+    "items": [{
+      "name": "Xilinx Vivado Design Suite",
+      "type": "FPGA Design Software",
+      "description": "Xilinx Vivado Design Suite is a comprehensive software suite for FPGA design and development. It includes tools for synthesis, implementation, and verification of FPGA designs, as well as support for high-level synthesis and system-level design. More information: https://www.xilinx.com/products/design-tools/vivado.html"
+     },
+     {
+      "name": "Xilinx Vitis Unified Software Platform",
+      "type": "Software Development Platform for Xilinx FPGAs",
+      "description": "Xilinx Vitis Unified Software Platform is a software development platform that enables developers to create applications for Xilinx FPGAs using high-level programming languages such as C, C++, and Python. It provides a unified environment for software development, hardware design, and system integration. More information: https://www.xilinx.com/products/design-tools/vitis/vitis-platform.html"
+     },
+     {
+      "name": "Synopsys Design Tools",
+      "type": "ASIC Design Software",
+      "description": "Synopsys offers a range of design tools for ASIC development, including synthesis, place-and-route, and verification tools. These tools are used for the design and implementation of custom integrated circuits. More information: https://www.synopsys.com/asic.html"
+     },
+     {
+      "name": "Cadence Design Tools",
+      "type": "ASIC Design Software",
+      "description": "Cadence provides a suite of design tools for ASIC development, including tools for digital design, verification, and physical implementation. These tools are used for the design and implementation of custom integrated circuits. More information: https://www.cadence.com/en_US/home/tools/digital-design-and-signoff/asic-design.html"
+    }]
   }
 ]
